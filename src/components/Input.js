@@ -27,12 +27,12 @@ const createInputWrapper = (props) => {
 
 const createInput = (props) => {
     const input = document.createElement('input'); // crear elemento tipo input
-    input.placeholder = props.placeholder;
+    input.placeholder = props.placeholder;  // agregarle el placeholder al input
     
     if (props.lineStyle === 'full') {
-        input.classList.add('input-field-1');
+        input.classList.add('input-field-1'); // Se le agrega la calse al input
     } else {
-        input.classList.add('input-field-2')
+        input.classList.add('input-field-2') // Se le agrega la calse al input
     }
    
     return input;

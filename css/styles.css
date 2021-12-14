@@ -160,6 +160,12 @@ button{
     border: none;
     border-radius: 4px;
 }
+.fill-button-big-normal{
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+}
 .fill-buttons .fill-button:nth-child(3),
 .fill-buttons .fill-button:nth-child(4){
     height: 50px;

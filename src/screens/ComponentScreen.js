@@ -8,10 +8,11 @@ export const ComponentScreen = () => {
     const inputFull = Input({lineStyle: 'full', placeholder: 'sebas'});
     const inputEmpty = Input({lineStyle: 'empty', placeholder: 'juanda'});
 
-    const buttonFill = Button({lineStyle: 'fill', size: 'small', text: 'normal'});
+    const buttonFillSmallNormal = Button({lineStyle: 'fill', size: 'small', text: 'normal'});
+    const buttonFillBigNormal = Button({lineStyle: 'fill', size: 'big', text: 'normal'})
 
     const card = Card({
-        children: [inputFull, inputEmpty, buttonFill]
+        children: [inputFull, inputEmpty, buttonFillSmallNormal, buttonFillBigNormal]
     });
 
     screen.append(card);

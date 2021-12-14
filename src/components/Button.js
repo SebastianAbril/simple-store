@@ -12,8 +12,8 @@ export const Button = (props) => {
 if(props.lineStyle === 'fill' && props.size === 'small' && props.text == 'normal'){
     button.classList.add('fill-button-small-normal');
     console.log("Esta funcionando");
-} else {
-    button.classList.add('outline-button');
+} else if(props.lineStyle === 'fill' && props.size === 'big' && props.text == 'normal') {
+    button.classList.add('fill-button-big-normal');
 }
 
     return button;

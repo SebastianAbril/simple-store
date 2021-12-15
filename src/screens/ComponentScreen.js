@@ -1,6 +1,6 @@
 import { Input } from "../components/Input.js";
 import { Card } from "../components/Card.js";
-import { Icon} from "../components/icon.js";
+import { Icon} from "../components/Icon.js";
 
 export const ComponentScreen = () => {
     const screen = document.createElement('div');

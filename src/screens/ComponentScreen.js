@@ -2,6 +2,7 @@ import { Input } from "../components/Input.js";
 import { Card } from "../components/Card.js";
 import { Icon} from "../components/Icon.js";
 import { Header } from "../components/Header.js"; 
+import { Section } from "../components/Section.js";
 
 export const ComponentScreen = () => {
     const screen = document.createElement('div');
@@ -17,6 +18,9 @@ export const ComponentScreen = () => {
     const card = Card({
         children: [inputFull, inputEmpty, icon]
     });
+
+    const section = Section();
+    screen.append(section)
 
 
     screen.append(card);

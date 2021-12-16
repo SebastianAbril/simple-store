@@ -16,11 +16,17 @@ export const ComponentScreen = () => {
     });
     screen.append(inputCard);
 
-    const buttonFillSmallNormal = Button({type: 'fill', size: 'small', text: 'Login'});
-    const buttonFillBigNormal = Button({type: 'fill', size: 'large', text: 'Exit'})
+    const buttonFillSmallNormal = Button({type: 'fill', size: 'normal', text: 'Login'});
+    const buttonOutlineBigNormal = Button({type: 'outline', size: 'large', text: 'Exit'});
+    const button3= Button({type: 'link', size: 'normal',text: 'Sebas', icon: 'arrow-right'});
+    const button4= Button({type: 'link', size: 'normal',text: 'Sebas', icon: 'arrow-left'});
+    const button5 = Button({type: 'outline', size: 'normal',text: 'Sebas', icon: 'arrow-right' });
+    const button6 = Button({type: 'fill', size: 'large',text: 'Sebas', icon: 'arrow-right'});
+    const button7 = Button({type: 'fill', size: 'small', icon: 'cart' });
+    const button8 = Button({type: 'outline', size: 'small', icon: 'cart', shape: 'circular'});
     
     const buttonCard = Card({
-        children: [buttonFillSmallNormal, buttonFillBigNormal]
+        children: [buttonFillSmallNormal, buttonOutlineBigNormal, button3, button4, button5, button6, button7, button8]
     });
 
     screen.append(buttonCard);

@@ -142,15 +142,52 @@ BUTTON
     color: var(--white)
 }
 
+/********* TYPE ***********/
 .button-large {
     padding: 16px 78px 16px 78px;
 }
+.button-normal {
+    padding: 16px 46px 16px 46px;
+}
+.button-small {
+    padding: 15px;
+}
 
+/********* SIZE ***********/
 .button-fill {
     border: none;
     background-color: var(--primary);
 }
-
 .button-outline {
     border: 1px solid var(--primary);
+    background-color: var(--white);
+    color: var(--black);
 }
+.button-link {
+    border: none;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/********* ICON ***********/
+.button-arrow-right i {
+    position: relative;
+    right: -15px;
+}
+.button-arrow-left i {
+    position: relative;
+    right: -15px;
+}
+.button-cart i{
+    position: static;
+}
+
+/********* SHAPE ***********/
+.button-circular{
+    border-radius: 50%;
+}
+
+.button-circular-small{
+    border: 1px solid var(--grey);
+}
+

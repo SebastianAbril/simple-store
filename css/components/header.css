@@ -1,0 +1,26 @@
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--white);
+}
+
+.topBar {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: var(--white);
+}
+
+.menu {
+    display:flex;
+    padding: 10px;
+    justify-content: center;
+    background-color: var(--white);
+}
+
+.label-menu{
+    margin: 10px 30px;
+    font-size: 16px;
+}

@@ -1,38 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('./core.css');
+@import url('./components/container.css');
+@import url('./components/row.css');   
+@import url('./components/imageButtonCard.css');
 
-html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-
-:root{
-    --primary: #595CFF;
-    --secondary: #8C8EFF;
-    --primary-dark: #383BE4;
-
-    --positive: #00CB6F;
-    --warning: #FFBC2C;
-    --negative: #EE7764;
-    --active: #595CFF;
-
-    --white: #FFFFFF;
-    --snow: #F9F9FB;
-    --grey: #AFB1BD;
-    --dark-grey: #82828B;
-    --pale-grey: #F0F0F5;
-    --light-grey: #E6E6EB;
-    --black: #000000;
-}
-
-*{
-    font-family: 'Inter', sans-serif;
-}
-#app {
-    width: 100%;
-    background-color: var(--light-grey);
-}
 .fields{
     display:flex;
     flex-direction: row;
@@ -185,13 +156,10 @@ BUTTON
     border: 1px solid var(--grey);
 }
 
-a::before {
-    content: "♥";
-  } */
 
-  /*****************************
-  header
-  *****************************/
+/*****************************
+header
+*****************************/
 
 header {
     display: flex;
@@ -204,6 +172,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     padding: 10px;
+    font-weight: bold;
 }
 
 .menu {
@@ -217,4 +186,17 @@ header {
     font-size: 16px;
 }
 
-@import './components/container.css'
+.divLabel3And4{
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
+/*
+******* IMAGE BUTTON CARD
+*/
+

@@ -1,31 +1,48 @@
-import {Container} from '../components/Container.js';
+import {Column} from '../components/Column.js';
 import {Header} from '../components/Header.js';
 import {ImageButtonCard} from '../components/ImageButtonCard.js';
 import { Row } from '../components/Row.js';
 
 export function HomeScreen() {
-    const header = Header();
 
-    const imageButtonCard1 = ImageButtonCard({style: { width: '100%'}});
-    const imageButtonCard2 = ImageButtonCard({style: { width: '48%'}});
-    const imageButtonCard3 = ImageButtonCard({style: { width: '48%'}});
+    const imageButtonCard4 = ImageButtonCard({style: { width: '20%'}});
+    const imageButtonCard5 = ImageButtonCard({style: { width: '20%'}});
+    const imageButtonCard6 = ImageButtonCard({style: { width: '20%'}});
+    const imageButtonCard7 = ImageButtonCard({style: { width: '20%'}});
 
-    const container = Container({
+    const column = Column({
         children: [
-            header,
+            Header(),
             Row({
-                children:[imageButtonCard1]
+                style: {
+                    backgroundColor: 'white',
+                    marginBottom: '60px'
+                },
+                children:[
+                    ImageButtonCard({style: { width: '100%'}})
+                ]
             }),
             Row({
-                children:[imageButtonCard2, imageButtonCard3], 
                 style: {
                     justifyContent: 'space-between',
-                    backgroundColor: 'red'
+                    backgroundColor: 'white',
+                    marginBottom: '60px'
+                },
+                children:[
+                    ImageButtonCard({style: { width: '48%'}}), 
+                    ImageButtonCard({style: { width: '48%'}})
+                ]
+            }),
+            Row({
+                children: [imageButtonCard4, imageButtonCard5, imageButtonCard6, imageButtonCard7,],
+                style: {
+                    justifyContent:'space-between',
+                    backgroundColor: 'white'
                 }
             })
         ]
     });
         
-    return container;    
+    return column;    
 };
 

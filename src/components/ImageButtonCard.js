@@ -1,4 +1,8 @@
- /*
+import { Column } from "./Column.js";
+import { Row } from "./Row.js";
+import { Label } from "./Label.js";
+import { Button } from "./Button.js";
+/*
  props = {
      style: {
          width: 100px,
@@ -7,16 +11,19 @@
  }
  */
 
-export const ImageButtonCard = (props) => {
-    const imageButtonCard = document.createElement('div');
 
-    imageButtonCard.classList.add('imageButtonCard');
-    imageButtonCard.style.backgroundImage= 'url(../icons/Block.svg)'
-
-    Object.keys(props.style).forEach((atttributeName) => {
-        imageButtonCard.style[atttributeName] = props.style[atttributeName];
+export const ImageButtonCard = ({ style = {}}) => {
+    const imageButtonCard = Column({
+        className: 'imageButtonCard',
+        style,
+        children: [
+            Label({ text: 'Title'}),
+            Label({ text: 'Description'}),
+            Button({ text: 'Button'}),
+        ]
     });
+
+    imageButtonCard.style.backgroundImage= 'url(../icons/Block.svg)'
 
     return imageButtonCard;
 };
-

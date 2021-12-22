@@ -24,3 +24,10 @@ header {
     margin: 10px 30px;
     font-size: 16px;
 }
+
+.divLabel3And4{
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

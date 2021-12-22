@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 @import url('./core.css');
-@import url('./components/container.css');
+@import url('./components/column.css');
 @import url('./components/row.css');   
 @import url('./components/imageButtonCard.css');
+@import url('./components/header.css');
 
 .fields{
     display:flex;
@@ -157,46 +158,9 @@ BUTTON
 }
 
 
-/*****************************
-header
-*****************************/
-
-header {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: var(--white);
-}
-
-.topBar {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
-    font-weight: bold;
-}
-
-.menu {
-    display:flex;
-    padding: 10px;
-    justify-content: center;
-}
-
-.label-menu{
-    margin: 10px 30px;
-    font-size: 16px;
-}
-
-.divLabel3And4{
-    width: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
 
 
 
-/*
-******* IMAGE BUTTON CARD
-*/
+
 

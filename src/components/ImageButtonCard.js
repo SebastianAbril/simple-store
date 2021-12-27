@@ -15,14 +15,14 @@ import { Button } from "./Button.js";
  */
 
 
-export const ImageButtonCard = ({ style = {}, buttonType = 'fill'}) => {
+export const ImageButtonCard = ({ style = {}, buttonType = 'fill', buttonIcon = 'arrow-right'}) => {
     const imageButtonCard = Column({
         className: 'imageButtonCard',
         style,
         children: [
             Label({ text: 'Title'}),
             Label({ text: 'Description'}),
-            Button({ text: 'Button', type: buttonType}),
+            Button({ text: 'Button', type: buttonType, icon: buttonIcon}),
         ]
     });
 

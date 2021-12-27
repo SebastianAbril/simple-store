@@ -25,8 +25,8 @@ export function HomeScreen() {
                     marginBottom: '60px'
                 },
                 children:[
-                    ImageButtonCard({style: { width: '48%'}, buttonType:'outline'}), 
-                    ImageButtonCard({style: { width: '48%'}})
+                    ImageButtonCard({style: { width: '48%'}, buttonType:'link'}), 
+                    ImageButtonCard({style: { width: '48%'}, buttonType:'link'})
                 ]
             }),
             Row({

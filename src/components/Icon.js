@@ -1,6 +1,6 @@
 /*
 props {
-    name: fa-car,
+    name: fa-cart-plus, fa-cart-arrow-down, fa-search, fa-home 
 
 }
 */

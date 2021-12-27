@@ -2,9 +2,14 @@ import { Input } from "../components/Input.js";
 import { Card } from "../components/Card.js";
 import { Button} from "../components/Button.js"
 import { Icon} from "../components/Icon.js";
+import { Header } from "../components/Header.js"; 
+import { Section } from "../components/Section.js";
 
 export const ComponentScreen = () => {
     const screen = document.createElement('div');
+    
+    const header = Header();
+    screen.append(header);
 
     const inputFull = Input({lineStyle: 'full', placeholder: 'sebas'});
     const inputEmpty = Input({lineStyle: 'empty', placeholder: 'juanda'});
@@ -16,6 +21,8 @@ export const ComponentScreen = () => {
     });
     screen.append(inputCard);
 
+    const section = Section();
+    screen.append(section)
     const buttonFillSmallNormal = Button({type: 'fill', size: 'normal', text: 'Login'});
     const buttonOutlineBigNormal = Button({type: 'outline', size: 'large', text: 'Exit'});
     const button3= Button({type: 'link', size: 'normal',text: 'Sebas', icon: 'arrow-right'});
@@ -33,5 +40,10 @@ export const ComponentScreen = () => {
 
     
 
+
+   
     return screen;
 };
+
+
+

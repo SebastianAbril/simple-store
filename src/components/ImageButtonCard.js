@@ -7,19 +7,22 @@ import { Button } from "./Button.js";
      style: {
          width: 100px,
          background: red
-     }
+     },
+     buttonType: string
+
+     button: HTMLLEMNT
  }
  */
 
 
-export const ImageButtonCard = ({ style = {}}) => {
+export const ImageButtonCard = ({ style = {}, buttonType = 'fill'}) => {
     const imageButtonCard = Column({
         className: 'imageButtonCard',
         style,
         children: [
             Label({ text: 'Title'}),
             Label({ text: 'Description'}),
-            Button({ text: 'Button'}),
+            Button({ text: 'Button', type: buttonType}),
         ]
     });
 

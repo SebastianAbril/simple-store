@@ -4,6 +4,7 @@
 @import url('./components/row.css');   
 @import url('./components/imageButtonCard.css');
 @import url('./components/header.css');
+@import url('./components/imageInfoCard.css');
 
 .fields{
     display:flex;
@@ -14,7 +15,7 @@
     height: 100px;
     border-radius: 20px;
 }
-.input-field-1{
+.input-field-1{  
     width: 265px;
     height: 40px;
     border-radius: 4px;

@@ -3,6 +3,7 @@
     size: large,normal,small
     icon: arrow-right, arrow-left, cart.
     shape: rectangular or circular
+    text: ....
 }
 */
 import { Icon } from '../components/Icon.js';

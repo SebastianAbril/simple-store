@@ -1,167 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
-@import url('./core.css');
-@import url('./components/column.css');
-@import url('./components/row.css');   
-@import url('./components/imageButtonCard.css');
-@import url('./components/header.css');
-@import url('./components/imageInfoCard.css');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import url("./core.css");
+@import url("./components/column.css");
+@import url("./components/row.css");
+@import url("./components/imageButtonCard.css");
+@import url("./components/header.css");
+@import url("./components/imageInfoCard.css");
 
-.fields{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: white;
-    height: 100px;
-    border-radius: 20px;
+.fields {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  height: 100px;
+  border-radius: 20px;
 }
-.input-field-1{  
-    width: 265px;
-    height: 40px;
-    border-radius: 4px;
-    border: 1px solid var(--light-grey);
-    background: var(--white);
-    size: 30px;
-    outline: none;
+.input-field-1 {
+  width: 265px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--light-grey);
+  background: var(--white);
+  size: 30px;
+  outline: none;
 }
-.input-field-1::placeholder{
-    font-family: Inter;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 16px;
-    position: absolute;
-    width: 55px;
-    height: 16px;
-    left: 13px;
-    top: 12px;
+.input-field-1::placeholder {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  position: absolute;
+  width: 55px;
+  height: 16px;
+  left: 13px;
+  top: 12px;
 }
-.div-input-field-1:focus-within{
-    border: 1px solid var(--active);
-    border-radius: 4px;
+.div-input-field-1:focus-within {
+  border: 1px solid var(--active);
+  border-radius: 4px;
 }
-input[type="text"]{
-    color: var(--black);
-    font-family: Inter;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 16px;
-    padding-left: 13px;
-    padding-right: 13px;
-    font-weight: 400; 
+input[type="text"] {
+  color: var(--black);
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  padding-left: 13px;
+  padding-right: 13px;
+  font-weight: 400;
 }
 
-.input-field-2{
-    width: 265px;
-    height: 40px;
-    border: none;
-    background: var(--white);
-    size: 30px;
-    outline: none;
+.input-field-2 {
+  width: 265px;
+  height: 40px;
+  border: none;
+  background: var(--white);
+  size: 30px;
+  outline: none;
 }
 .div-input-field-2 {
-    border-bottom: 1px solid var(--light-grey);
+  border-bottom: 1px solid var(--light-grey);
 }
-.div-input-field-2:focus-within{
-    border-bottom: 1px solid var(--active);
-}
-
-.blocks{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--white);
-    height: 100px;
-    border-radius: 20px;
-}
-.block{
-    width: 120px;
-    height: 46px;
-    background-color: var(--pale-grey);
-}
-.blocks div:nth-child(2){
-    border-radius: 4px;
-}
-.blocks div:nth-child(3){
-    border-radius: 8px;
-}
-.blocks div:nth-child(4){
-    border-radius: 23px;
-}
-.blocks div:nth-child(5){
-    border-radius: 8px;
-    background-color: var(--primary);
+.div-input-field-2:focus-within {
+  border-bottom: 1px solid var(--active);
 }
 
-
-
-/**********************************
-BUTTON
-***********************************/
-.button {
-    padding: 16px 46px 16px 46px;
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 14px;
-    font-family: 'Inter', sans-serif;
-    color: var(--white)
+.blocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--white);
+  height: 100px;
+  border-radius: 20px;
 }
-
-/********* TYPE ***********/
-.button-large {
-    padding: 16px 78px 16px 78px;
+.block {
+  width: 120px;
+  height: 46px;
+  background-color: var(--pale-grey);
 }
-.button-normal {
-    padding: 16px 46px 16px 46px;
+.blocks div:nth-child(2) {
+  border-radius: 4px;
 }
-.button-small {
-    padding: 15px;
+.blocks div:nth-child(3) {
+  border-radius: 8px;
 }
-
-/********* SIZE ***********/
-.button-fill {
-    border: none;
-    background-color: var(--primary);
+.blocks div:nth-child(4) {
+  border-radius: 23px;
 }
-.button-outline {
-    border: 1px solid var(--primary);
-    background-color: var(--white);
-    color: var(--black);
+.blocks div:nth-child(5) {
+  border-radius: 8px;
+  background-color: var(--primary);
 }
-.button-link {
-    border: none;
-    background-color: var(--white);
-    color: var(--black);
-}
-
-/********* ICON ***********/
-.button-arrow-right i {
-    position: relative;
-    right: -15px;
-}
-.button-arrow-left i {
-    position: relative;
-    right: -15px;
-}
-.button-cart i{
-    position: static;
-}
-
-/********* SHAPE ***********/
-.button-circular{
-    border-radius: 50%;
-}
-
-.button-circular-small{
-    border: 1px solid var(--grey);
-}
-
-
-
-
-
-
-
-

@@ -1,4 +1,4 @@
-import { ComponentScreen } from "./screens/ComponentScreen.js";
+
 import { HomeScreen } from "./screens/HomeScreen.js";
 
 const app = document.getElementById('app');

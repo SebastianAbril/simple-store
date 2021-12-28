@@ -19,7 +19,7 @@ export function HomeScreen() {
                 ]
             }),
             Row({
-                style: {
+                style: {
                     justifyContent: 'space-between',
                     backgroundColor: 'white',
                     marginBottom: '60px'
@@ -49,5 +49,5 @@ export function HomeScreen() {
     });
         
     return column;    
-};
+}
 

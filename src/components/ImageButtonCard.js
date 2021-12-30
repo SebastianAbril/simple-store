@@ -18,18 +18,18 @@ export const ImageButtonCard = ({
   style = {},
   buttonType = "fill",
   buttonIcon = "arrow-right",
+  text = "Default Text",
+  description = "Default descriptiuon",
 }) => {
   const imageButtonCard = Column({
     className: "imageButtonCard",
     style,
     children: [
-      Label({ text: "Title" }),
-      Label({ text: "Description" }),
+      Label({ text }),
+      Label({ text: description }),
       Button({ text: "Button", type: buttonType, icon: buttonIcon }),
     ],
   });
-
-  imageButtonCard.style.backgroundImage = "url(../icons/Block.svg)";
 
   return imageButtonCard;
 };

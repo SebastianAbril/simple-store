@@ -5,6 +5,7 @@
 @import url("./components/imageButtonCard.css");
 @import url("./components/header.css");
 @import url("./components/imageInfoCard.css");
+@import url("./components/footer.css");
 
 .fields {
   display: flex;

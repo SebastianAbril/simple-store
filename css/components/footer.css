@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  height: 356px;
+  width: 100%;
+  background-color: grey;
+}
+.footerRow {
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.footerColumn {
+  width: 100%;
+  height: 100%;
+  background-color: var(--pale-grey);
+  padding-top: 50px;
+}
+
+.footerRow .footerColumn:nth-child(1) {
+  display: flex;
+  padding-left: 40px;
+}
+.footerIconRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly; /* no me esta funcionando */
+}
+
+.footerIconRow div {
+  width: 20px;
+}
+
+.footerColumn label {
+  width: 100px;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 5px;
+}

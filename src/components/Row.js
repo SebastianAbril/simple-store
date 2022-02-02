@@ -4,21 +4,24 @@ Props ={
     style: {
         justifyContent: space-between
         backgroundColor: white
+        alignItems
         ...
     }
 }
 */
-export const Row = ({children = [], style = {}}) => {
-    const row = document.createElement('div'); // creo un div y lo guardo en row.
-    row.classList.add('row'); // agrego clase 'row
+export const Row = ({ className, children = [], style = {} }) => {
+  const row = document.createElement("div"); // creo un div y lo guardo en row.
+  row.classList.add("row"); // agrego clase 'row
 
-    Object.keys(style).forEach((AttributeName)=> {
-        row.style[AttributeName] = style[AttributeName];
-    });
+  if (className) {
+    row.classList.add(className);
+  }
 
-    children.forEach( (element) => row.append(element));
-    
-    return row;
+  Object.keys(style).forEach((AttributeName) => {
+    row.style[AttributeName] = style[AttributeName];
+  });
+
+  children.forEach((element) => row.append(element));
+
+  return row;
 };
-
- 

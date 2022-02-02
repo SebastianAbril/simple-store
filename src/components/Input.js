@@ -11,7 +11,7 @@ export function Input(props) {
     inputWrapper.append(input); // para meter el input dentro del div. 
 
     return inputWrapper;
-};
+}
 
 const createInputWrapper = (props) => {
     const inputWrapper = document.createElement('div'); // crear elemento tipo div

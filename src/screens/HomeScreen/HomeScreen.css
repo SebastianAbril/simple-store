@@ -1,0 +1,25 @@
+.HomeScreen-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.HomeScreen-main-products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.HomeScreen-main-products .main-product {
+  width: 100%;
+}
+
+.HomeScreen-main-products .secondary-product {
+  width: 45%;
+}
+
+@media (max-width: 768px) {
+  .HomeScreen-main-products .secondary-product {
+    width: 100%;
+  }
+}

@@ -1,3 +1,14 @@
+import React from 'react';
+
+
+
+
+
+
+
+
+
+
 import { Column } from "../components/Column";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";

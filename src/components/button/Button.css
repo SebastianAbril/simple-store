@@ -8,27 +8,27 @@
 }
 
 /********* TYPE ***********/
-.button-large {
+.large {
   padding: 16px 78px 16px 78px;
 }
-.button-normal {
+.normal {
   padding: 16px 46px 16px 46px;
 }
-.button-small {
+.small {
   padding: 15px;
 }
 
 /********* SIZE ***********/
-.button-fill {
+.fill {
   border: none;
   background-color: var(--primary);
 }
-.button-outline {
+.outline {
   border: 1px solid var(--primary);
   background-color: var(--white);
   color: var(--black);
 }
-.button-link {
+.link {
   border: none;
   background-color: var(--white);
   color: var(--black);
@@ -48,10 +48,10 @@
 }
 
 /********* SHAPE ***********/
-.button-circular {
+.circular {
   border-radius: 50%;
 }
 
-.button-circular-small {
+.circular-small {
   border: 1px solid var(--grey);
 }

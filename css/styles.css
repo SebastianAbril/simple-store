@@ -1,97 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
-@import url("./core.css");
-@import url("./components/column.css");
-@import url("./components/row.css");
-@import url("./components/imageButtonCard.css");
-@import url("./components/header.css");
-@import url("./components/imageInfoCard.css");
-@import url("./components/footer.css");
 
-.fields {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: white;
-  height: 100px;
-  border-radius: 20px;
+html {
+  box-sizing: border-box;
 }
-.input-field-1 {
-  width: 265px;
-  height: 40px;
-  border-radius: 4px;
-  border: 1px solid var(--light-grey);
-  background: var(--white);
-  size: 30px;
-  outline: none;
-}
-.input-field-1::placeholder {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
-  position: absolute;
-  width: 55px;
-  height: 16px;
-  left: 13px;
-  top: 12px;
-}
-.div-input-field-1:focus-within {
-  border: 1px solid var(--active);
-  border-radius: 4px;
-}
-input[type="text"] {
-  color: var(--black);
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
-  padding-left: 13px;
-  padding-right: 13px;
-  font-weight: 400;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-.input-field-2 {
-  width: 265px;
-  height: 40px;
-  border: none;
-  background: var(--white);
-  size: 30px;
-  outline: none;
-}
-.div-input-field-2 {
-  border-bottom: 1px solid var(--light-grey);
-}
-.div-input-field-2:focus-within {
-  border-bottom: 1px solid var(--active);
+:root {
+  --primary: #595cff;
+  --secondary: #8c8eff;
+  --primary-dark: #383be4;
+
+  --positive: #00cb6f;
+  --warning: #ffbc2c;
+  --negative: #ee7764;
+  --active: #595cff;
+
+  --white: #ffffff;
+  --snow: #f9f9fb;
+  --grey: #afb1bd;
+  --dark-grey: #82828b;
+  --pale-grey: #f0f0f5;
+  --light-grey: #e6e6eb;
+  --black: #000000;
 }
 
-.blocks {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+* {
+  font-family: "Inter", sans-serif;
+}
+#app {
+  width: 100%;
   background-color: var(--white);
-  height: 100px;
-  border-radius: 20px;
-}
-.block {
-  width: 120px;
-  height: 46px;
-  background-color: var(--pale-grey);
-}
-.blocks div:nth-child(2) {
-  border-radius: 4px;
-}
-.blocks div:nth-child(3) {
-  border-radius: 8px;
-}
-.blocks div:nth-child(4) {
-  border-radius: 23px;
-}
-.blocks div:nth-child(5) {
-  border-radius: 8px;
-  background-color: var(--primary);
 }
